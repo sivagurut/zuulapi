@@ -11,5 +11,5 @@ zuul:
   routes:
      helloservice:
       path: /helloservice/**
-      url: http://localhost:8081
+      url: https://hello-service-6xgn7czs6q-uc.a.run.app
       strip-prefix: false
