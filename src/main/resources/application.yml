@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: zuulapp
+server:
+  servlet:
+    contextPath: /zuulapi
+zuul:
+  host:
+    connect-timeout-millis: 1080000
+    socket-timeout-millis: 1080000
+  routes:
+     helloservice:
+      path: /helloservice/**
+      url: http://localhost:8081
+      strip-prefix: false
